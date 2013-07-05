@@ -25,7 +25,8 @@ public class FunctionalTest {
     public void findIpTestNominal() {
 		
         running(fakeApplication(), new Runnable() {
-           public void run() {
+           @Override
+		public void run() {
         	   
         	   Result result = route(fakeRequest(GET,"/json/78.225.149.183"));
        		   assertThat(status(result)).isEqualTo(OK);
@@ -53,7 +54,8 @@ public class FunctionalTest {
     public void findIpTestWrongIPFormat() {
 
         running(fakeApplication(), new Runnable() {
-           public void run() {
+           @Override
+		public void run() {
         	   
         	   Result result = route(fakeRequest(GET,"/json/78.225.149.1834"));
                

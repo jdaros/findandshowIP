@@ -1,13 +1,6 @@
 
 import org.junit.*;
 
-import play.mvc.Result;
-
-import static org.fest.assertions.Assertions.*;
-
-import static play.test.Helpers.GET;
-import static play.test.Helpers.*;
-
 /**
 *
 * Simple (JUnit) tests that can call all parts of a play app.

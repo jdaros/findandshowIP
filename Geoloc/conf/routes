@@ -4,8 +4,9 @@
 
 # Home page
 
-GET     /json/$ip<((((([0-2]?)([0-5]?)([0-5]))([.]){1}){3})(([0-2]?)([0-5]?)([0-5])))>  controllers.Application.findIp(ip: String)
+GET     /json/$ip<\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b>  controllers.Application.findIp(ip: String)
 GET 	/json/:ip									controllers.Application.badIp(ip: String, format = "json")
 
-GET 	/$ip<((((([0-2]?)([0-5]?)([0-5]))([.]){1}){3})(([0-2]?)([0-5]?)([0-5])))> 		controllers.Application.index(ip:String)
+GET 	/$ip<\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b> 		controllers.Application.index(ip:String)
 GET 	/:ip 										controllers.Application.badIp(ip:String,format = "html")
+

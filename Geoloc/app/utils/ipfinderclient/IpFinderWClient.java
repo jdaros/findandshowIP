@@ -3,10 +3,7 @@ package utils.ipfinderclient;
 import models.IpInformation;
 import org.codehaus.jackson.JsonNode;
 
-import play.Logger;
-import play.libs.F;
 import play.libs.F.Promise;
-import play.libs.WS.Response;
 import play.libs.WS;
 import utils.InvalidAttributeException;
 import static play.mvc.Http.Status.*;
