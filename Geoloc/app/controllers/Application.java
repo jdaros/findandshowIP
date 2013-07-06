@@ -105,13 +105,13 @@ public class Application extends Controller {
     	if(par_format.equals("json")){
     		
     		HashMap<String, Object> resultMap = new HashMap<String, Object>();
-    		resultMap.put("status", "invalid_request 2");
+    		resultMap.put("status", "invalid_request");
     		JsonNode resultJSON = Json.toJson(resultMap);
 
     		return badRequest(resultJSON);	
     	}
     	else {
-    		return badRequest("Invalid IP Attribute 2");
+    		return badRequest("Invalid IP Attribute");
     	}
 	}
     /* End of badIp() function */
